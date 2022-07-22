@@ -1,1 +1,66 @@
-
+                                          Differences between Document and Window Objects
+   document objects :
+                   => The document object represent a web page that is loaded in the browser. 
+                   => By accessing the document object, we can access the element in the HTML page. 
+                   => With the help of document objects, we can add dynamic content to our web page.
+                   => The document object can be accessed with a window.document or just document.
+                   => we could able to use both properties and methods in document 
+     syntax for documment with  properties :
+                         document.property_name;
+                   
+     synntax for document with methods :
+                         document.method_name;
+                         
+      example :         function myFunction() {
+		               	var title = document.title;
+			              var domain = document.domain;
+		                 	var body = document.body;
+		                	document.getElementById("demo").innerHTML =
+		           	"the title of the document is : "
+			            + title
+			            + "<br>"
+		            	+ "domain : "
+		            	+ domain
+		            	+ "<br>"
+		            	+ "body : "
+			            + body;
+             		}
+                -------------------------------------------------------------------------------------
+   Window objects :
+                   => The window object is the topmost object of the DOM hierarchy. 
+                   => It represents a browser window or frame that displays the contents of the webpage.
+                   => Whenever a window appears on the screen to display the contents of the document, the window object is created. 
+    syntax for window objec with  properties :
+                         window.property_name;
+                   
+     synntax for window object with methods :
+                         window.method_name;   
+                         
+    Example :
+                 
+		            function show() {
+		          	var h = window.innerHeight;
+			          var w = window.innerWidth;
+			          var l = window.location;
+			          var c = window.closed;
+			          document.getElementById("prop").innerHTML =
+			         "Frame's Height: "	+ h + "<br>"
+		           	+ "Frame's Width: "	+ w + "<br>"
+		            + "Window location:"+ l+ "<br>"
+		            + "Window Closed: "	+ c;
+	            	}  
+              
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
